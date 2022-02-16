@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<!-- urlfor(경로) 함수 사용 -->
+</head>
+<body>
+<div id="container">
+    <h2>loop.index 예제</h2>
+    <ul>
+        {% for item in items %}
+        <li> {{loop.index}} - {{item}} </li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
